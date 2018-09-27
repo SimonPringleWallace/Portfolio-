@@ -7,7 +7,7 @@ var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
-
+var connect = require('gulp-connect')
 // Set the banner content
 var banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -120,3 +120,10 @@ gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+// launch local server 8080
+gulp.task('webserver', function() {
+  connect.server();
+});
+
+gulp.task('default', ['webserver']);
