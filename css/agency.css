@@ -176,7 +176,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/masthead-img.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -184,7 +184,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -193,6 +193,7 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
+  padding-bottom:50px;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
@@ -206,7 +207,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 200px;
   }
   header.masthead .intro-text .intro-lead-in {
